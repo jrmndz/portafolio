@@ -1,0 +1,814 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+   --color-de-fondo: #F5F5F5;
+   --color-de-link: #464646;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    position: absolute;
+    height: 4796px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    height: 4796px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+  }
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    padding-left: 55px;
+    gap: 611px;
+    width: fit-content;
+    height: 88px;
+  }
+
+.menu__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu__title{
+    width: fit-content;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-de-link);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.menu__list__item{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-de-link);
+}
+
+
+/*Sección Title*/
+
+section.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 208px;
+    width: fit-cotent;
+    height: 368px;         
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 208px;
+    width: fit-content;
+    height: 368px;
+    order: 1;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    padding-left: 152px;
+    gap: 24px;
+    width: fit-content;
+    height: 246px;
+}
+
+.title__bio{
+    width: 50vw;
+    height: 122px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: var(--color-de-link);
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.title__subsection{
+    width: 50vw;
+    height: 52px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-de-link);
+    order: 1;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align: justify;
+}
+
+.title__network{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1px;
+    gap: 32px;
+    width: 467px;
+    height: 24px;
+    flex: none;
+    order: 2;
+    margin-top: auto;
+ 
+}
+
+.title__profile{
+    width: 368px;
+    height: 368px;
+    order: 1;
+    left: 768px;
+    justify-content: flex-end
+}
+
+/*Sección About*/
+
+section.about{
+    margin-top: 60px;
+    display: flex;
+    padding: 64px;
+    gap: 10px;
+    width: 100vw;
+    height: 383px;
+    background: #EAF2FD;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 255px;
+    padding-left: 10.2vw;
+}
+
+.about__title{
+    width: 137px;
+    height: 38px;  
+    font-family: 'Raleway';
+    color: var(--color-de-link);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.about__paragraph{
+    width: 751px;
+    height: 133px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 88px;
+    width: 1440px;
+    height: 520px
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 1136px;
+    height: 244px;
+}
+
+.skills__title{
+    margin-bottom: auto;
+    width: 82px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-de-link);
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 174px;
+    order: 1;
+}
+
+.skills__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background: #ffffff;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 1136px;
+    height: 244px;
+    
+}
+
+.hobbies__title{
+    margin-top: auto;
+    width: 127px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: var(--color-de-link);
+    order: 1;
+}
+
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 174px;
+    order: 1;
+}
+
+.hobbies__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0x;
+    gap: 8px;
+    background: #FFFFFF;
+    width: 176px;
+    height: 174px;
+    order: 1;
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 82px;
+    gap: 32px;
+    width: 100%;
+    height: 581px;
+    background: #EAF2FD;
+    align-self: stretch;
+}
+
+.academic__title{
+    width: 339px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-right: 8rem;
+    color: var(--color-de-link);
+}
+
+.academic__courses{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 347px;
+}
+
+.academic__courses__box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 368px;
+    height: 347px;
+    background: #FFFFFF;
+}
+
+.academic__courses__list{
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-end;
+   padding: 16px;
+   gap: 10px;
+   width: 368px;
+   height: 286px;
+  
+}
+
+.academic__courses__item__img{
+    margin-top: 5rem;
+    margin-left: 4rem;
+    width: 192px;
+    height: 130px;
+}
+
+.academic__courses__item__title{
+    width: 178px;
+    margin-top: 6.25rem;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 26px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-de-link);
+    order: 1;
+}
+
+.academic__courses__item__subtitle{
+    margin-top: 1.50rem;
+    width: 92px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    order: 2;
+    color: var(--color-de-link);
+}
+
+
+/* experiencia*/
+
+section.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 1136px;
+    height: 1886px;
+    order: 4;
+}
+
+.experience__section__title{
+    width: 361px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-de-link);
+}
+
+.experience{    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+    order: 1;
+    width: 1136px;
+    height: 1816px;
+}
+
+.experiencie__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 406px;
+}
+
+.experience__img{
+   align-self: stretch;
+   width: 752px;
+   height: 406px;;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    order: 1;
+    flex-grow: 1;
+    width: 368px;
+    height: 112px;
+}
+
+.experience__title{
+    width: 368px;
+    height: 26px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    align-self: stretch;
+    color: var(--color-de-link);
+}
+
+.experience__text{
+    margin-top: -20px;
+    width: 368px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-de-link);
+}
+
+.experience__description{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 560px;
+    height: 51px;
+    order: 2;
+}
+
+.experience__repo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    flex: none;
+    width: 116px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+}
+
+.experiencia__botao--repo{
+    width: 84px;
+    border: none;
+    height: 19px;
+    color: #2A7AE4;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.experience__demo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 105px;
+    height: 51px;
+    background: #2A7AE4;
+    order: 1;
+}
+
+.experience__botao--demo{
+    border: none;
+    background-color: transparent;
+    width: 73px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/*Contacto*/
+
+section.formcontato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 10px;
+    width: 100vw;
+    height: 788px;
+    background: #EAF2FD;
+}
+
+.formcontato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 0px 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 660px;
+}
+
+.formcontato--esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 656px;
+    height: 596px;
+    flex-grow: 1;
+    order: 1;
+    flex: none;
+}
+
+.formcontato__img{
+    width: 464px;
+    height: 593px;
+    background: #ededed;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 656px;
+    height: 84px;
+}
+
+.formcontato__title{
+    display: flex;
+    width: 141px;
+    height: 38px;
+    color: var(--color-de-link);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: right;
+}
+
+.formcontato__subtext{
+    width: 656px;
+    height: 38px;
+    color: var(--color-de-link);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 90%;
+    margin-top: 1px;
+    order: 1;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 656px;
+    height: 397px;
+    order: 1;
+    align-self: stretch;
+}
+
+.formcontato__input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    align-self: stretch;
+    width: 656px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+}
+
+.formcontato__textarea{
+    width: 656px;
+    height: 133px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+}
+
+.nombre::placeholder{
+    width: 98px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-de-link);
+}
+
+.formcontato__botao{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    background: #2A7AE4;
+    width: 144px;
+    height: 51px;
+    border: none;   
+    width: 112px;
+    height: 19px;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19px;
+}
+/*footeer*/
+
+.footer{
+    padding-top: 35rem;
+    color: #464646;   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.footer__rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+    background: #FFFFFF;
+    width: 100vw;
+    height: 102px;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+}
+
+
+/* Menú */
+@media (min-width: 768px){
+ 
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
